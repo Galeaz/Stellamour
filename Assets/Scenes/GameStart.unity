@@ -403,7 +403,7 @@ RectTransform:
   m_GameObject: {fileID: 1958281966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.0817, y: 9.0817, z: 9.0817}
+  m_LocalScale: {x: 11.380444, y: 7.315673, z: 7.315673}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2069447513}
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2cb782da0dddd4940a1e06282ed6226d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d350c1c9a4a9dd34ba31295fa4dd2022, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -583,6 +583,10 @@ PrefabInstance:
     - target: {fileID: 7761143583962281350, guid: b3d7174fa1f57274b9cef5a6a2cc4834, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761143583962281350, guid: b3d7174fa1f57274b9cef5a6a2cc4834, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7761143583974302106, guid: b3d7174fa1f57274b9cef5a6a2cc4834, type: 3}
       propertyPath: m_Layer
