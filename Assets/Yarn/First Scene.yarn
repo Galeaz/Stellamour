@@ -1,0 +1,17 @@
+﻿title: Start
+---
+Boss: Hello. Welcome to our office.
+
+-> Player: Thank you for the opportunity.
+    Boss: Okay, let's get you started.
+-> Player: Hello.
+    Boss: Oh, we got a talkative one.
+    Player: ...
+    <<jump Next>>
+    
+Player: And this is this start of my new professional life.
+===
+title: Next
+---
+Boss: So this is Terran, he will give you the introduction training.
+===
