@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayDemo()
     {
-        SceneManager.LoadScene("Game"); //loads singleplayer game scene
+        SceneManager.LoadScene("Season Selection");
     }
 
     public void QuitGame()

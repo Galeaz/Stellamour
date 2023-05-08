@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Season Selection.unity
+    guid: 620d3f9a0036370428546d3f30b9b5f1
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 8ebc7adb9a66bbc44832effb8f33f566
   m_configObjects: {}
