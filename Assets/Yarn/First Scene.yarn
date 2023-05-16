@@ -1,17 +1,99 @@
 ﻿title: Start
+position: 18,-105
 ---
-Boss: Hello. Welcome to our office.
+// We're getting introduced to the setting and Terran
+Eyes. Dozens of pairs of eyes are staring at us new hires as the hiring manager, Manuel, introduces us to the rest of the office. His announcement prompts a few awkward cheers and tight-lipped smiles.
 
--> Player: Thank you for the opportunity.
-    Boss: Okay, let's get you started.
--> Player: Hello.
-    Boss: Oh, we got a talkative one.
-    Player: ...
-    <<jump Next>>
-    
-Player: And this is this start of my new professional life.
+Manager: Welcome to the team! I'll show each of you to your desks. Our office is split up by role, so you will all be sitting with your specific departments.
+
+// Background still office, no characters
+Manuel, the other four new hires, and I walk up to a group of desks occupied by a talkative bunch.
+There's one empty seat next to a younger-looking man with a rich laugh, handing a sticky note to another equally amused employee sitting across from him. The doodle on the note is an uncanny image of the recipient.
+I can already tell what department this is.
+<<jump Tour>>
 ===
-title: Next
+title: Tour
+position: 18,59
 ---
-Boss: So this is Terran, he will give you the introduction training.
+Manager: "PlayerName, you'll be sitting here with the other artists. Let me know if you have any other questions, or feel free to ask Terran.
+Manager: Out of all the artists, he's been with us the longest, and he'll be training you on the basics. I'm sure you'll get along well."
+
+The boss and rest of the new batch of hires continue to another department while I take a seat.
+<<jump Meet>>
+===
+title: Meet
+position: 19,235
+---
+// Terran character appears, smiling
+Terran: "I'm Terran. I know Manuel just introduced me, but it doesn't hurt to hear it again."
+
+PlayerName: "Nice to meet you! I'm PlayerName."
+
+Terran: "How are you feeling about your first day? Anxious? Ready to conquer the world?"
+
+PlayerName: "Is there an in-between? I'm confident in my capability of handling work and deadlines and team members, it's just..."
+
+Terran: "Is it your first time working in a bigger studio?"
+
+PlayerName: "Yeah... I have experience making indie games in smaller teams, but in a studio of this size? Never. I'm a little nervous that my concept of a 'fast-paced environment' might not actually be fast enough."
+
+Terran: "Indie, huh? I sometimes dream of working on a game with a smaller team, getting to know and work with everyone individually. That doesn't happen often in medium to large-sized companies like ours."
+
+// Bad answer:
+-> PlayerName: "Why not just go for an indie studio and quit this job then? Nothing is holding you down here."
+    Terran: "Uh..."
+    <<jump SuggestQuit>>
+// Good answer:
+-> PlayerName: "I had a great time with everyone there. You could work at one if you really wanted to, you know. Maybe after a long time here?"
+    Terran: "Hm..."
+    <<jump SuggestWorkLater>>
+===
+title: SuggestQuit
+position: -212,364
+---
+// Terran is a determined worker who is set on doing his best for this job.
+// He doesn't see a job as something so disposable like MC implies with this choice
+Terran: "It's not like this job is as disposable as you might think..."
+
+Terran: "I love this place. And I have assumed too many responsibilities and made too many obligations to just abandon my colleagues."
+
+PlayerName: "Oh, I didn't mean it like that! I'm sorry if I overstepped."
+
+Terran: "It's alright. Our mentalities just differ on this topic, I suppose."
+
+<<jump Why>>
+===
+
+title: SuggestWorkLater
+position: 247,361
+---
+Terran: "Perhaps one day...
+
+Terran: "I really would prefer working here for as long as I can. I'm comfortable with the people, the atmosphere, and the games we produce. They fit my art style so well."
+
+PlayerName: "That's pretty reassuring for me."
+
+// Terran smiles
+Terran: "I hope you have a similar great experience here, then."
+
+Terran: "In fact, I'll make sure of it!"
+<<jump Why>>
+===
+
+title: Why
+position: 14,615
+---
+
+Terran: "Now I'm curious about the switch, though. I don't mean to intrude, but what led you to join us here?"
+
+PlayerName: "This sounds like a second interview..."
+
+Terran: "You call it an interview. To me, it's discovering the intriguing beginnings of a new colleague."
+
+PlayerName: "Then I guess I'll let you hear it."
+
+PlayerName: "I would've stayed longer if I could've. I was dedicated to the company."
+
+PlayerName: "But when a publisher bailed and the layoffs came, I was one.
+
 ===
