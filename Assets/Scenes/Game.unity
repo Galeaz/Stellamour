@@ -2115,7 +2115,11 @@ PrefabInstance:
     - target: {fileID: 2809876128215858307, guid: 3ff4e0d87ab7d4789a1565ac303e8261, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a581ff3810b2e0a4690cddcf7634ed22, type: 3}
+      objectReference: {fileID: 21300000, guid: bebb463e6558ac6449ea91c837b3b1f5, type: 3}
+    - target: {fileID: 2809876128215858307, guid: 3ff4e0d87ab7d4789a1565ac303e8261, type: 3}
+      propertyPath: m_Color.a
+      value: 0.6039216
+      objectReference: {fileID: 0}
     - target: {fileID: 5481484092624835572, guid: 3ff4e0d87ab7d4789a1565ac303e8261, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2203,7 +2207,7 @@ PrefabInstance:
     - target: {fileID: 5665317717604146022, guid: 3ff4e0d87ab7d4789a1565ac303e8261, type: 3}
       propertyPath: m_SpriteState.m_SelectedSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 902d611ab43afe940bd891d4a3a480f3, type: 3}
+      objectReference: {fileID: 21300000, guid: bebb463e6558ac6449ea91c837b3b1f5, type: 3}
     - target: {fileID: 6635123125486227991, guid: 3ff4e0d87ab7d4789a1565ac303e8261, type: 3}
       propertyPath: m_Name
       value: Option View

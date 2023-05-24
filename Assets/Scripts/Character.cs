@@ -69,7 +69,7 @@ public class Character : MonoBehaviour
     public IEnumerator Heart()
     {
         heart.enabled = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         heart.enabled = false;
     }
@@ -77,7 +77,7 @@ public class Character : MonoBehaviour
     public IEnumerator noHeart()
     {
         heartBroken.enabled = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         heartBroken.enabled = false;
     }
