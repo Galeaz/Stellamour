@@ -14,8 +14,8 @@ public class Character : MonoBehaviour
 
     // objects needed to render new textures on Character face
     [SerializeField] List<Expression> expressions = new List<Expression>();
-    [SerializeField] Renderer faceRenderer;
-    [SerializeField] int faceMaterialIndex;
+    [SerializeField] Image heart;
+    [SerializeField] Image heartBroken;
 
     // when this character is first created
     public void Awake() {
@@ -58,11 +58,27 @@ public class Character : MonoBehaviour
             Debug.Log($"Character {name} moved to >{expressionName}.");
     }
 
-    private void disableCharacters()
+    public void disableCharacters()
     {
         for (int i = 0; i <= 5; i++)
         {
             expressions[i].image.enabled = false;
         }
+    }
+
+    public IEnumerator Heart()
+    {
+        heart.enabled = true;
+        yield return new WaitForSeconds(2f);
+
+        heart.enabled = false;
+    }
+
+    public IEnumerator noHeart()
+    {
+        heartBroken.enabled = true;
+        yield return new WaitForSeconds(2f);
+
+        heartBroken.enabled = false;
     }
 }

@@ -13,10 +13,29 @@ public class VisualNovel : MonoBehaviour
     {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         dialogueRunner.AddCommandHandler<string>("expressionName", SetExpression);
+        dialogueRunner.AddCommandHandler<bool>("Clear", clearExpression);
+        dialogueRunner.AddCommandHandler<bool>("HeartNoHeart", showHeart);
     }
 
     private void SetExpression(string name)
     {
         character.SetExpression(name);
+    }
+
+    private void clearExpression(bool clear)
+    {
+        character.disableCharacters();
+    }
+
+    private void showHeart(bool heart)
+    {
+        if (heart)
+        {
+            StartCoroutine(character.Heart());
+        }
+        else if (!heart)
+        {
+            StartCoroutine(character.noHeart());
+        }
     }
 }
