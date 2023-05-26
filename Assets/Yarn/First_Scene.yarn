@@ -1,0 +1,374 @@
+﻿title: Intro
+position: 11,-500
+---
+// We're getting introduced to the setting and Terran
+<i>Dozens of eyes stare as the hiring manager, Manuel, introduces us to the rest of the office. His announcement prompts a few awkward cheers and tight-lipped smiles.</i>
+<i>Each of us is holding a box full of trinkets, supplies, and everything else a person could have for their new workplace.</i>
+
+Manager: "Welcome to the team! I'll show each of you to your desks. Our office is split up by role, so you will all be sitting with your specific departments."
+
+// Background still office, no characters
+<i>Manuel, the other four new hires, and I walk up to a group of desks occupied by a talkative bunch.</i>
+<i>There's one empty seat next to a younger-looking man with a rich laugh, handing a sticky note to another equally amused employee sitting across from him.</i>
+<i>The doodle on the note is an uncanny image of the recipient.</i>
+<i>I can already tell what department this is.</i>
+<<jump Tour>>
+===
+title: Tour
+position: 11,-340
+---
+Manager: "PlayerName, you'll be sitting here with the other artists. Let me know if you have any other questions, or feel free to ask Terran.
+Manager: "Out of all the artists, he's been with us the longest, and he'll be training you on the basics. I'm sure you'll get along well."
+
+<i>The boss and rest of the new batch of hires continue to another department while I take a seat, placing my box on the floor beside me.</i>
+<i>I start unpacking my things when a voice calls my attention.</i>
+<<jump Meet>>
+===
+title: Meet
+position: 11,-180
+---
+<<expressionName Happy>>
+Terran: "I'm Terran. I know Manuel just introduced me, but I'll be helping you."
+
+PlayerName: "Nice to meet you! I'm PlayerName."
+
+// Terran happy
+<<expressionName Happy>>
+Terran: "How are you feeling about your first day? Anxious? Ready to conquer the world?"
+
+// Good answer (Taurus values honesty above all):
+-> Tell the truth.
+    PlayerName: "Is there an in-between? I'm confident in my capability of handling work and deadlines and team members, it's just..."
+    <<jump Honesty>>
+// Bad answer (Taurus values honesty above all):
+-> Lie.
+    PlayerName: "Perfectly fine!"
+    <<jump Lie>>
+===
+title: Honesty
+position: 332,11
+---
+// Terran confused
+<<expressionName Confused>>
+Terran: "It's still a new place that you need time to learn first?"
+
+PlayerName: "Exactly."
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "I understand completely. I had that feeling when I first got here, too."
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "I saw how nervous you looked up there during the introduction and wouldn't have believed you if you said otherwise."
+
+<i>He noticed?</i>
+
+// Terran happy
+<<expressionName Happy>>
+Terran: "So I appreciate your honesty. Truly. Many people don't like to admit anxieties like that."
+
+PlayerName: "Well..."
+// Bad answer:
+-> PlayerName: "A little white lie wouldn't hurt, right?"
+    <<jump WhiteLie>>
+// Good answer:
+-> PlayerName: "It's important to be honest."
+    <<jump Important>>
+===
+
+title: WhiteLie
+position: 186,171
+---
+// Bad answer:
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "I personally value honesty above most qualities."
+
+Terran: "But I suppose I get it, especially depending on circumstances."
+
+<<jump TerranAsks>>
+===
+
+title: Important
+position: 508,163
+---
+// Terran happy
+<<expressionName Happy>>
+Terran: "I agree."
+
+Terran: "Plus, you might as well get comfortable with the people you're stuck with."
+
+<<jump TerranAsks>>
+===
+
+title: Lie
+position: -320,9
+---
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "Hm..."
+
+<<expressionName Confused>>
+Terran: "I'm not entirely sure I believe you."
+
+PlayerName: "Why not?"
+
+<<expressionName Neutral>>
+Terran: "You looked nervous up there during the introduction."
+
+<i>He noticed?</i>
+
+PlayerName: "Okay, you caught me. I am pretty nervous."
+
+PlayerName: "It's just that this is a whole new environment. It's going to take me some time to learn things here."
+
+<<expressionName Happy>>
+Terran: "Understandable."
+<<jump TerranAsks>>
+===
+
+title: TerranAsks
+position: 11,345
+---
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "So is this your first time working in a bigger studio?"
+
+PlayerName: "Yeah... I have experience making indie games in smaller teams, but in a studio of this size? Never. I'm a little nervous that my idea of a 'fast-paced environment' might not actually be fast enough."
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "Indie, huh? I sometimes dream of working on a game with a smaller team, getting to know and work with everyone individually. That doesn't happen often in medium to large-sized companies like ours."
+
+// Bad answer (implies job doesn't matter too much):
+-> PlayerName: "Why not just go for an indie studio and quit this job then? Nothing is holding you down here."
+    Terran: "Uh..."
+    <<jump SuggestQuit>>
+// Good answer:
+-> PlayerName: "I had a great time with everyone there. You could work at one if you really wanted to, you know. Maybe after a long time here?"
+    Terran: "Hm..."
+    <<jump SuggestWorkLater>>
+===
+title: SuggestQuit
+position: -273,505
+---
+// Terran is a determined worker who is set on doing his best for this job.
+// He doesn't see a job as something so disposable like MC implies with this choice
+// Terran mad
+<<expressionName Mad>>
+Terran: "It's not like this job is as disposable as you might think..."
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "I love this place. And I've taken up too many responsibilities and made too many obligations to just abandon my colleagues."
+
+PlayerName: "Oh, I didn't mean it like that! I'm sorry if I overstepped."
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "It's alright. It's just important to me because I really prioritize doing the most that I can for my work."
+Terran: "I also like sticking with things for as long as I can."
+Terran: "On that note..."
+
+<<jump Why>>
+===
+
+title: SuggestWorkLater
+position: 303,505
+---
+// Terran happy
+<<expressionName Happy>>
+Terran: "Perhaps one day..."
+
+// Terran happy 
+<<expressionName Happy>>
+Terran: "I really would prefer working here for as long as I can. I'm comfortable with the people, the atmosphere, and the games we produce. They fit my art style so well."
+
+PlayerName: "That's pretty reassuring for me."
+
+// Terran happy
+<<expressionName Happy>>
+Terran: "I hope you have a similar great experience here, then."
+
+// Terran happy 
+<<expressionName Happy>>
+Terran: "In fact, I'll make sure of it!"
+<i>He says it so confidently.</i>
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "By the way..."
+<<jump Why>>
+===
+
+title: Why
+position: 11,665
+---
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "I don't mean to intrude, but I'm curious about the switch. What led you to join us here?"
+
+PlayerName: "What's this, round two of my interview?"
+
+// Terran blush
+<<expressionName Blush>>
+Terran: "You call it an interview. To me, it's seeking out the intriguing beginnings of a new colleague."
+
+PlayerName: "Okay... I guess I'll tell you."
+
+<<expressionName Neutral>>
+//Good answer (more honesty):
+-> Be open.
+    <<jump Open>>
+//Bad answer (once again, less honesty):
+-> Be vague.
+    <<jump Vague>>
+===
+
+title: Open
+position: -256,797
+---
+PlayerName: "I would've stayed longer if I could've. I was dedicated to the company."
+
+PlayerName: "But when a publisher bailed and the layoffs came, I was one of them."
+
+<i>That might be why I have some doubts about myself now...</i>
+
+PlayerName: "I searched and searched for a new job but gosh, job-hunting in this industry is rough."
+
+PlayerName: "I got a couple offers, and thought Celes Studios fit me best. So here I am!"
+
+// Terran confused
+<<expressionName Confused>>
+Terran: "Wow."
+
+// Terran sad
+<<expressionName Sad>>
+Terran: "As troublesome of a journey it must have been, I'm glad you saw something in us."
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "I may not know you yet, PlayerName, but I support you."
+
+// Terran happy
+<<expressionName Happy>>
+Terran: "I really do hope we can help create a comfortable environment for you here."
+
+<i>Seeing his kind, gentle smile, I feel one creeping on my own lips as well. I can't help but blush at the sincerity of his words.</i>
+<<jump InvtoLunch>>
+===
+
+title: Vague
+position: 300,788
+---
+PlayerName: "Long story short, I was laid off by my last company. I got a few offers out of my new job search, and now, here I am at Celes Studios."
+ // Terran sad
+ <<expressionName Sad>>
+Terran: "I see."
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "If you want to tell me more about it in the future, I'm willing to listen."
+
+// Terran happy
+<<expressionName Happy>>
+Terran: "I'm glad you saw something in us, though!"
+
+<i>His bright smile brings one to my own face. There's a strong sense of sincerity in his words that has a part of me regretting not saying more.</i>
+<i>It could just be a story for another time...</i>
+<<jump InvtoLunch>>
+===
+
+title: InvtoLunch
+position: 11,982
+--- 
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "Well, I should probably get to helping you with completely setting up your workstation."
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "We can keep getting to know each other over lunch, if you'd like?"
+
+PlayerName: "We can!"
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "I usually eat with one of the creative directors, Reese, so they'll be there too."
+
+// Terran happy
+<<expressionName Happy>>
+Terran: "It's our routine at this point."
+// Good answer (doesn't intrude on his routine):
+-> PlayerName: "Great! I should probably meet them soon, anyways."
+    <<jump Agree>>
+// Bad answer (Taurus likes consistency and routine):
+-> PlayerName: "I mean... just the two of us would be fun... don't you think so?"
+    <<jump Disagree>>
+===
+
+title: Agree
+position: -264,1138
+---
+// Terran happy
+<<expressionName Happy>>
+Terran: "I agree. They're very easy to mesh with, so it should be fun."
+
+// Terran happy
+<<expressionName Happy>>
+Terran: "And you are too, which is promising. I wouldn't mind if you joined our little routine."
+
+// Terran blush
+<<expressionName Blush>>
+Terran: "Usually I'm a stickler for consistency, but for you I can make an exception."
+
+-> PlayerName: "Thank you."
+-> PlayerName: "I'd love to."
+
+<<jump IntroEnd>>
+===
+
+title: Disagree
+position: 302,1151
+---
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "Well..."
+// Terran mad
+<<expressionName Mad>>
+Terran: "I think it'd be wrong to just abandon them and our routine today without a heads-up."
+
+PlayerName: "Oh. I see."
+
+// Terran neutral
+<<expressionName Neutral>>
+Terran: "Sorry, I'm a little stickler for consistency. But don't worry, they're very easy to mesh with."
+
+<i>That's probably something I should note about him.</i>
+<i>It may not have been the answer I was hoping for, but I'm glad he explained.</i>
+<<jump IntroEnd>>
+===
+
+title: IntroEnd
+position: 11,1336
+---
+<i>A beat of silence passes, the first since our lively conversation began.</i>
+<i>But in what feels like a mere few seconds, it's gone once again.</i>
+// Terran happy
+<<expressionName Happy>>
+Terran: "You have everything set up yet?"
+
+PlayerName: "Almost..."
+
+<i>I take out the cute figurine that first joined me when I was working at my last studio, the final item in my box.</i>
+<i>Oh! It has a few tiny scuffs that weren't there before I packed it away. Looks like the move has already affected it.</i>
+<i>I place it to the right of my monitor, beside the stationary holder I bought for my collection of new art supplies.</i>
+<i>A new home for both of us.</i>
+
+PlayerName: "I can figure out organization later. We can start."
+
+// Terran happy
+<<expressionName Happy>>
+Terran: "Great! Let's run through the programs first."
+<<jump CuteScene1>>
+===

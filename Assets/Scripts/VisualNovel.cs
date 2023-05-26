@@ -13,6 +13,7 @@ public class VisualNovel : MonoBehaviour
     {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         dialogueRunner.AddCommandHandler<string>("expressionName", SetExpression);
+        dialogueRunner.AddCommandHandler<string>("expressionBustName", SetBustExpression);
         dialogueRunner.AddCommandHandler<bool>("Clear", clearExpression);
         dialogueRunner.AddCommandHandler<bool>("HeartNoHeart", showHeart);
     }
@@ -20,6 +21,11 @@ public class VisualNovel : MonoBehaviour
     private void SetExpression(string name)
     {
         character.SetExpression(name);
+    }
+
+    private void SetBustExpression(string name)
+    {
+        character.SetBustExpression(name);
     }
 
     private void clearExpression(bool clear)
