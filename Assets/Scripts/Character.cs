@@ -79,26 +79,25 @@ public class Character : MonoBehaviour
 
     public void SetBustExpression(string expressionName)
     {
-        disableCharacters();
         switch (expressionName)
         {
             case "Blush":
-                expressions[0].image.enabled = true;
+                bustExpressions[0].image.enabled = true;
                 break;
             case "Confused":
-                expressions[1].image.enabled = true;
+                bustExpressions[1].image.enabled = true;
                 break;
             case "Happy":
-                expressions[2].image.enabled = true;
+                bustExpressions[2].image.enabled = true;
                 break;
             case "Mad":
-                expressions[3].image.enabled = true;
+                bustExpressions[3].image.enabled = true;
                 break;
             case "Neutral":
-                expressions[4].image.enabled = true;
+                bustExpressions[4].image.enabled = true;
                 break;
             case "Sad":
-                expressions[5].image.enabled = true;
+                bustExpressions[5].image.enabled = true;
                 break;
             default:
                 break;
@@ -111,7 +110,7 @@ public class Character : MonoBehaviour
         for (int i = 0; i <= 5; i++)
         {
             expressions[i].image.enabled = false;
-            bustExpressions[i].image.enabled = false;
+            //bustExpressions[i].image.enabled = false;
         }
     }
 
